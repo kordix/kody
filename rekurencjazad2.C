@@ -24,10 +24,7 @@ int main()
     printf("Podaj dolny dwumian: ");
     scanf("%d", &k);
 
-    //printf("%d %d %d %d", silnia(n),silnia(n -k),silnia(k), silnia(n) / (silnia(n - k) * silnia(k)));
-
      printf("Dwumian newtona %d %d wynosi %d", n, k, silnia(n) / (silnia(n - k) * silnia(k)) );
-;
-    //system("pause");
+
     return 0;
 }
