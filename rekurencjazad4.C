@@ -22,8 +22,6 @@ int euklides(int n, int k)
         k = k - n;
     }
 
-    //printf("%d %d \n", n, k);
-
     euklides(n, k);
 }
 
