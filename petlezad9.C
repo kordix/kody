@@ -36,21 +36,8 @@ int main (int argc, char *argv[]){
             y = ylocal;
         }
 
-        //sscanf(bufor, "%u %lf %lf", &ui, &x, &y);
-        //printf("--> %d %.2f %.2f\n", ui, x,y);
     }
    if (fclose(in_handle)) { printf("error closing file."); exit(-1); }
 }
 
 
-/*
-main() {
-   FILE *fp;
-
-   fp = fopen("./test.txt", "w+");
-   fprintf(fp, "This is testing for fprintf...\n");
-   fputs("This is testing for fputs...\n", fp);
-   fclose(fp);
-}
-
-*/
