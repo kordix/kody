@@ -15,8 +15,8 @@ int main()
 {
 	int n;
 	
-	printf("Podaj liczbę: ");
-	scanf("%d", n);
+	printf("Podaj liczbe: ");
+	scanf("%d", &n);
 	
 	printf("Suma %d kolejnych liczb naturalnych wynosi %d \n",n,suma(n));
 
