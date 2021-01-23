@@ -4,19 +4,25 @@
 int tab[4] = {555, 1568789, -84655, 11};
 
 int main(int argc, char *argv[]) {
-	int *ptab[4];//= {NULL, NULL, NULL, NULL};
+	//deklaracja tablicy wskaźników
+	int *ptab[4]= {NULL, NULL, NULL, NULL};
 	int min;
 
+	//deklarujemy liczbę jako największą tak żeby potem znaleźć liczby mniejsze
 	min = INT_MAX;
 
 	int i;
+
+	//znalezienie najmniejszej liczby
 	for (i = 0; i < 4; i++) {
 		if (tab[i] < min) {
 			min = tab[i];
+			//element wskaźnika wskazuje na adres pamięci danego elementu tablicy
 			ptab[0] = &tab[i];
 		}
 	}
 
+	//znalezienei drugiej najmniejszej liczby
 	min = INT_MAX;
 	for (i = 0; i < 4; i++) {
 		if (tab[i] < min && tab[i] >= *ptab[0] && &tab[i] != ptab[0]) {
@@ -25,6 +31,7 @@ int main(int argc, char *argv[]) {
 		}
 	}
 
+	//znalezienie trzeciej najmniejszej liczby
 	min = INT_MAX;
 	for (i = 0; i < 4; i++) {
 		if (tab[i] < min && tab[i] >= *ptab[1] && &tab[i] != ptab[1]) {
