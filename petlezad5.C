@@ -3,18 +3,15 @@
 int main(void) 
 {
 
-    int tablica[6];
+    int tablica[5];
 
 
- for(int i = 0;i<6;i++){
+ for(int i = 0;i<5;i++){
      scanf("%d", &tablica[i]);
  }
 
-for(int i = 0;i<6;i++){
-     printf("%d",tablica[i]);
- }
 
- for(int j = 5;j>=0;j--){
+ for(int j = 4;j>=0;j--){
      printf("%d",tablica[j]);
  }
 
