@@ -5,7 +5,7 @@ int tab[4] = {555, 1568789, -84655, 11};
 
 int main(int argc, char *argv[]) {
 	//deklaracja tablicy wskaźników
-	int *ptab[4]= {NULL, NULL, NULL, NULL};
+	int *ptab[4];
 	int min;
 
 	//deklarujemy liczbę jako największą tak żeby potem znaleźć liczby mniejsze
