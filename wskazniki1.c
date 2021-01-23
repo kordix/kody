@@ -48,8 +48,11 @@ int main(int argc, char *argv[]) {
 		}
 	}
 
+	//oryginalna tablica
 	printf("tab = {%d, %d, %d, %d}\n", tab[0], tab[1], tab[2], tab[3]);
+	//adresy pamięci wskaźników
 	printf("ptab = {%p, %p, %p, %p}\n", ptab[0], ptab[1], ptab[2], ptab[3]);
+	//wartości wskaźnikow
 	printf("*ptab = {%d, %d, %d, %d}\n", *ptab[0], *ptab[1], *ptab[2], *ptab[3]);
 	return 0;
 }
